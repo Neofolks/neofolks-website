@@ -72,6 +72,7 @@ function RsvpForm() {
               <input
                 name="email"
                 placeholder="Email"
+                type="email"
                 value={input.email}
                 onChange={(event) => handleFormChange(index, event)}
                 className="border-black border-2 w-1/3"
@@ -80,6 +81,7 @@ function RsvpForm() {
               <input
                 name="phone"
                 placeholder="Phone"
+                maxLength={10}
                 value={input.phone}
                 onChange={(event) => handleFormChange(index, event)}
                 className="border-black border-2 w-1/3"
