@@ -56,6 +56,7 @@ function RsvpForm() {
           type="text"
           placeholder="Team Name"
           className="border-black border-2"
+          required
         />
         {members.map((input, index) => {
           return (
@@ -66,6 +67,7 @@ function RsvpForm() {
                 value={input.name}
                 onChange={(event) => handleFormChange(index, event)}
                 className="border-black border-2 w-1/3"
+                required
               />
               <input
                 name="email"
@@ -73,6 +75,7 @@ function RsvpForm() {
                 value={input.email}
                 onChange={(event) => handleFormChange(index, event)}
                 className="border-black border-2 w-1/3"
+                required
               />
               <input
                 name="phone"
@@ -80,6 +83,7 @@ function RsvpForm() {
                 value={input.phone}
                 onChange={(event) => handleFormChange(index, event)}
                 className="border-black border-2 w-1/3"
+                required
               />
               <button
                 type="button"
