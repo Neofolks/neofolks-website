@@ -1,6 +1,9 @@
 import React, { useRef, useState } from "react";
+// import {XCircleIcon} from '@heroicons/react/24/solid'
+import Xicon from '../assets/icons/Xicon.svg'
+import { Button, TextInput } from "flowbite-react";
 
-function RsvpForm() {
+function RsvpForm({toggleShowModal}) {
   const [members, setMembers] = useState([]);
 
   const teamNameRef = useRef();
@@ -42,6 +45,7 @@ function RsvpForm() {
 
     console.log(await response.json());
     teamNameRef.current.value = ''
+    toggleShowModal()
     setMembers([])
   };
 
@@ -49,70 +53,65 @@ function RsvpForm() {
     <>
       <form
         onSubmit={(event) => handleSubmit(event)}
-        className="flex flex-col justify-center items-center gap-4"
+        className="flex flex-col justify-center items-center gap-4 p-4"
       >
-        <input
+        <TextInput
           ref={teamNameRef}
           type="text"
           placeholder="Team Name"
-          className="border-black border-2"
+          className="w-1/2"
           required
         />
         {members.map((input, index) => {
           return (
             <div key={index} className="flex gap-2">
-              <input
+              <TextInput
                 name="name"
                 placeholder="Name"
                 value={input.name}
                 onChange={(event) => handleFormChange(index, event)}
-                className="border-black border-2 w-1/3"
                 required
               />
-              <input
+              <TextInput
                 name="email"
                 placeholder="Email"
                 type="email"
                 value={input.email}
                 onChange={(event) => handleFormChange(index, event)}
-                className="border-black border-2 w-1/3"
                 required
               />
-              <input
+              <TextInput
                 name="phone"
                 placeholder="Phone"
                 maxLength={10}
                 value={input.phone}
                 onChange={(event) => handleFormChange(index, event)}
-                className="border-black border-2 w-1/3"
                 required
               />
               <button
                 type="button"
-                className="border-black border-2"
                 onClick={() => removeMember(index)}
               >
-                X
+                <img src={Xicon} alt="delete icon" />
               </button>
             </div>
           );
         })}
         <div className="flex gap-2">
-          <button
+          <Button
             type="button"
             onClick={addMember}
             disabled={members.length >= 5}
-            className="border-blue-500 border-2 p-2 rounded-lg"
           >
             Add member
-          </button>
-          <button
+          </Button>
+          <Button
+          color={"success"}
             type="submit"
-            disabled={members.length < 1}
-            className="border-blue-500 border-2 p-2 rounded-lg"
+            disabled={members.length <= 1}
           >
             Register
-          </button>
+          </Button>
         </div>
       </form>
     </>

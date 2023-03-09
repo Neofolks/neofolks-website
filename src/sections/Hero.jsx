@@ -5,10 +5,11 @@ import TinkerthonArrow from '../assets/TinkerthonArrow.png'
 import NUVlogo from '../assets/NUVlogo.png'
 import Nuvyuvalogo from '../assets/Nuvyuvalogo.png'
 import RegisterNowButton from "../components/RegisterNowButton";
+import RegisterModal from "../components/RegisterModal";
 
 function Hero() {
   return (
-    <div className="w-full h-[80svh] bg-[#00020f]">
+    <div className="w-full h-[100svh] bg-[#00020f]">
       {/* BG PAPER goes here */}
       {/* <img src="" id='bg' alt="" /> */}
 
@@ -30,7 +31,7 @@ function Hero() {
       <div className=" relative top-28 flex flex-col items-center gap-6">
         {/* Buttons */}
         <div className="w-full flex justify-center items-center space-x-4">
-            <RegisterNowButton/>
+            <RegisterModal/>
             <button className="bg-[#232323] p-2 px-6 rounded-3xl text-white hover:bg-[#afafaf] hover:text-black">View Events</button>
         </div>
         {/* Hero Text */}

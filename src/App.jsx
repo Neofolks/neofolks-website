@@ -11,7 +11,7 @@ function App() {
       {/* <RsvpForm /> */}
       {/* <Navbar/> */}
       <Hero/>
-      <Events/>
+      {/* <Events/> */}
     </div>
   );
 }
