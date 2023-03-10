@@ -1,10 +1,13 @@
 import React, { useRef, useState } from "react";
 // import {XCircleIcon} from '@heroicons/react/24/solid'
-import Xicon from '../assets/icons/Xicon.svg'
-import { Button, TextInput } from "flowbite-react";
+import Xicon from "../assets/icons/Xicon.svg";
+import { Button, TextInput, Toast } from "flowbite-react";
+import CheckIcon from "../assets/icons/CheckIcon.svg";
 
-function RsvpForm({toggleShowModal}) {
+function RsvpForm({ toggleShowModal }) {
   const [members, setMembers] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [showToast, setShowToast] = useState(false);
 
   const teamNameRef = useRef();
 
@@ -27,6 +30,7 @@ function RsvpForm({toggleShowModal}) {
   };
 
   const handleSubmit = async (event) => {
+    setLoading(true);
     event.preventDefault();
     const response = await fetch(
       "https://neofolks-server.up.railway.app/teams/",
@@ -44,13 +48,28 @@ function RsvpForm({toggleShowModal}) {
     );
 
     console.log(await response.json());
-    teamNameRef.current.value = ''
-    toggleShowModal()
-    setMembers([])
+    // if(response.status == 201) setShowToast(true)
+    
+    teamNameRef.current.value = "";
+    setLoading(false);
+    // setShowToast(false)
+    toggleShowModal();
+    setMembers([]);
   };
 
   return (
     <>
+      {/* {showToast && (
+        <Toast className="fixed top-3 z-10">
+          <div className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-green-100 text-green-500 dark:bg-green-800 dark:text-green-200">
+            <img src={CheckIcon} alt="" />
+          </div>
+          <div className="ml-3 text-sm font-normal">
+            Item moved successfully.
+          </div>
+          <Toast.Toggle />
+        </Toast>
+      )} */}
       <form
         onSubmit={(event) => handleSubmit(event)}
         className="flex flex-col justify-center items-center gap-4 p-4"
@@ -88,10 +107,7 @@ function RsvpForm({toggleShowModal}) {
                 onChange={(event) => handleFormChange(index, event)}
                 required
               />
-              <button
-                type="button"
-                onClick={() => removeMember(index)}
-              >
+              <button type="button" onClick={() => removeMember(index)}>
                 <img src={Xicon} alt="delete icon" />
               </button>
             </div>
@@ -105,14 +121,11 @@ function RsvpForm({toggleShowModal}) {
           >
             Add member
           </Button>
-          <Button
-          color={"success"}
-            type="submit"
-            disabled={members.length <= 1}
-          >
+          <Button color={"success"} type="submit" disabled={members.length < 1}>
             Register
           </Button>
         </div>
+        {loading && <div className="font-semibold">Loading...</div>}
       </form>
     </>
   );

@@ -9,35 +9,41 @@ import RegisterModal from "../components/RegisterModal";
 
 function Hero() {
   return (
-    <div className="w-full h-[100svh] bg-[#00020f]">
+    <div className="w-full min-h-[100svh] bg-[#00020f] flex flex-col justify-between items-center">
       {/* BG PAPER goes here */}
       {/* <img src="" id='bg' alt="" /> */}
 
       {/* NUV and NUVyuva imgs */}
-      <img src={NUVlogo} className="absolute top-5 md:top-10 md:left-5 max-w-[150px] md:max-w-none" alt="" />
-      <img src={Nuvyuvalogo} className="absolute top-5 right-5 max-w-[70px] md:max-w-none" alt="" />
+      <div className="w-full flex justify-between items-center p-2">
+        <img src={NUVlogo} className="max-w-[150px] md:max-w-none" alt="" />
+        <img src={Nuvyuvalogo} className="max-w-[70px] md:max-w-none" alt="" />
+      </div>
 
       {/* Neofolks hero title img */}
       <img
         src={NeofolksHero}
-        className="relative top-28 left-0 right-0 ml-auto mr-auto w-[90%] max-w-[800px]"
+        className="w-[95%] max-w-[800px]"
         alt="neofolks hero"
         />
-
-      {/* Tinkerthon arrow img */}
-      <img src={TinkerthonArrow} className="relative left-[-130px] md:left-[-150px] top-28 right-0 ml-auto mr-auto max-w-[100px] md:max-w-none" alt="" />
       
       {/* Parent div for buttons and hero text */}
-      <div className=" relative top-28 flex flex-col items-center gap-6">
+      <div className="flex flex-col items-center gap-6">
+        {/* Tinkerthon arrow img */}
+        {/* <div className="w-[90%]">
+          <img src={TinkerthonArrow} className="max-w-[125px] md:max-w-none" alt="" />
+        </div> */}
         {/* Buttons */}
         <div className="w-full flex justify-center items-center space-x-4">
             <RegisterModal/>
-            <button className="bg-[#232323] p-2 px-6 rounded-3xl text-white hover:bg-[#afafaf] hover:text-black">View Events</button>
+            <button disabled className="bg-[#232323] p-2 px-6 rounded-3xl text-white hover:bg-[#afafaf] hover:text-black">View Events</button>
         </div>
         {/* Hero Text */}
-        <div className="md:w-1/2 md:max-w-[600px] px-2 md:px-0">
-            <p className="text-white text-center text-xl">
-                Liveblocks provides developers with a complete toolkit to embed performant collaboration features to your product remarkably fast.
+        <div className="md:w-1/2 md:max-w-[850px] px-2 md:px-0 space-y-3 pb-10">
+            <p className="text-white text-center text-md md:text-xl">
+                Are you ready for an unforgettable experience! Join us at Tinkerthon, where you'll have the opportunity to connect with aspiring individuals, participate in interactive sessions, and hear from industry experts. This event is designed to inspire and unlock your inner innovator.
+            </p>
+            <p className="text-white text-center text-md md:text-xl">
+            Whether you're interested in learning new skills, networking with peers, or simply having fun, Tinkerthon has something for everyone. So don't miss out on this chance to grow and discover new opportunities. Register now and be a part of this exciting 36 hour event!
             </p>
         </div>
       </div>
