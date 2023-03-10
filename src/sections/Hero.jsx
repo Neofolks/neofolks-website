@@ -9,7 +9,7 @@ import RegisterModal from "../components/RegisterModal";
 
 function Hero() {
   return (
-    <div className="w-full min-h-[100svh] bg-[#00020f] flex flex-col justify-between items-center">
+    <div className="w-full min-h-[100svh] bg-bg-dark-blue flex flex-col justify-between items-center" id="home">
       {/* BG PAPER goes here */}
       {/* <img src="" id='bg' alt="" /> */}
 
