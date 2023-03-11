@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@fontsource/familjen-grotesk": "^4.5.4",
+    "@fontsource/montserrat": "^4.5.14",
     "@heroicons/react": "^2.0.16",
     "flowbite": "^1.6.3",
     "flowbite-react": "^0.4.2",
