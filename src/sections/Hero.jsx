@@ -9,12 +9,12 @@ import RegisterModal from "../components/RegisterModal";
 
 function Hero() {
   return (
-    <div className="w-full min-h-[100svh] bg-bg-dark-blue flex flex-col justify-between items-center" id="home">
+    <div className="relative w-full min-h-[100svh] bg-bg-dark-blue flex flex-col justify-between items-center" id="home">
       {/* BG PAPER goes here */}
-      {/* <img src="" id='bg' alt="" /> */}
+        {/* <img src="../assets/BigBGPaper.png" className="absolute bg-cover" id='bg' alt="" /> */}
 
       {/* NUV and NUVyuva imgs */}
-      <div className="w-full flex justify-between items-center p-2">
+      <div className="w-full flex justify-between items-center p-2 z-10">
         <img src={NUVlogo} className="max-w-[150px] md:max-w-none" alt="" />
         <img src={Nuvyuvalogo} className="max-w-[70px] md:max-w-none" alt="" />
       </div>
@@ -22,12 +22,12 @@ function Hero() {
       {/* Neofolks hero title img */}
       <img
         src={NeofolksHero}
-        className="w-[95%] max-w-[800px]"
+        className="w-[95%] max-w-[800px] z-10"
         alt="neofolks hero"
         />
       
       {/* Parent div for buttons and hero text */}
-      <div className="flex flex-col items-center gap-6">
+      <div className="flex flex-col items-center gap-6 z-10">
         {/* Tinkerthon arrow img */}
         {/* <div className="w-[90%]">
           <img src={TinkerthonArrow} className="max-w-[125px] md:max-w-none" alt="" />
@@ -35,7 +35,7 @@ function Hero() {
         {/* Buttons */}
         <div className="w-full flex justify-center items-center space-x-4">
             <RegisterModal/>
-            <button disabled className="bg-[#232323] p-2 px-6 rounded-3xl text-white hover:bg-[#afafaf] hover:text-black">View Events</button>
+            <button disabled className="bg-[#232323] p-2 px-6 rounded-3xl text-white hover:bg-[#afafaf] hover:text-black font-semibold">View Events</button>
         </div>
         {/* Hero Text */}
         <div className="md:w-1/2 md:max-w-[850px] px-2 md:px-0 space-y-3 pb-10">
@@ -47,8 +47,6 @@ function Hero() {
             </p>
         </div>
       </div>
-
-
     </div>
   );
 }

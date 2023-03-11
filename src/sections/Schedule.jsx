@@ -5,12 +5,12 @@ function Schedule() {
     <div className="h-screen w-full text-white" id="schedule">
       {/* Title */}
       <div className="w-full flex flex-col justify-center items-center gap-2">
-        <h1 className="text-5xl">Event Schedule</h1>
-        <h2 className="text-lg">Mark your calendars</h2>
+        <h1 className="text-5xl font-['MonumentExtended'] text-center">Event Schedule</h1>
+        <h2 className="text-lg font-['montserrat']">Mark your calendars</h2>
       </div>
 
       {/* Divider */}
-      <div className="h-[4px] w-1/2 my-4 bg-slate-600 ml-auto mr-auto"></div>
+      <div className="h-[3px] w-1/2 my-4 bg-[#7e7e7e] rounded-md ml-auto mr-auto"></div>
     </div>
   );
 }
