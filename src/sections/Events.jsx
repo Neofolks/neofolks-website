@@ -24,7 +24,7 @@ function Events() {
         {/* Tinkerthon */}
         <div className='relative min-h-[80svh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 md:gap-0'>
             {/* Left side img */}
-            <div className='bg-[#ffffff] bg-opacity-10 aspect-video rounded-xl p-8 md:p-0 w-2/4 max-w-[500px] flex justify-center items-center'>
+            <div className='bg-[#ffffff] bg-opacity-10 aspect-video rounded-xl p-8 md:p-0 w-2/3 max-w-[500px] flex justify-center items-center'>
                 <img src={Tinkerthon} className=''  alt="" />
             </div>
 
@@ -59,7 +59,7 @@ function Events() {
             <RegisterNowButton/>
         </div>
         {/* Right side img */}
-        <div className='bg-[#ffffff] bg-opacity-10 p-4 md:p-0 aspect-video w-2/4 max-w-[500px] rounded-xl flex justify-center items-center'>
+        <div className='bg-[#ffffff] bg-opacity-10 p-4 md:p-0 aspect-video w-2/3 max-w-[500px] rounded-xl flex justify-center items-center'>
             <img src={CADchaos} className='aspect-video'  alt="" />
         </div>
     </div>
@@ -71,7 +71,7 @@ function Events() {
         <div className='absolute w-full h-full bg-[#A6A739] right-0 blur-[100px] opacity-[.15] hidden md:block'></div>
 
         {/* Left side img */}
-        <div className='bg-[#838383] aspect-video bg-opacity-10 p-4 md:p-0 rounded-xl w-2/4 max-w-[500px] flex justify-center items-center'>
+        <div className='bg-[#838383] aspect-video bg-opacity-10 p-4 md:p-0 rounded-xl w-2/3 max-w-[500px] flex justify-center items-center'>
             <img src={Derby} className='aspect-video' alt="" />
         </div>
 
@@ -106,7 +106,7 @@ function Events() {
             <RegisterNowButton/>
         </div>
         {/* Right side img */}
-        <div className='bg-[#838383] aspect-video bg-opacity-10 p-4 md:p-0 w-2/4 max-w-[500px] rounded-xl flex justify-center items-center'>
+        <div className='bg-[#838383] aspect-video bg-opacity-10 p-4 md:p-0 w-2/3 max-w-[500px] rounded-xl flex justify-center items-center'>
             <img src={TechTalks} className='aspect-video' alt="" />
         </div>
     </div>
