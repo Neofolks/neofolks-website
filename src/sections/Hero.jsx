@@ -38,7 +38,7 @@ function Hero() {
             <button disabled className="bg-[#232323] p-2 px-6 rounded-3xl text-white hover:bg-[#afafaf] hover:text-black font-semibold">View Events</button>
         </div>
         {/* Hero Text */}
-        <div className="md:w-1/2 md:max-w-[850px] px-2 md:px-0 space-y-3 pb-10">
+        <div className="md:w-1/2 md:max-w-[1000px] px-2 md:px-0 space-y-3 pb-10">
             <p className="text-white text-center text-md md:text-xl">
                 Are you ready for an unforgettable experience! Join us at Tinkerthon, where you'll have the opportunity to connect with aspiring individuals, participate in interactive sessions, and hear from industry experts. This event is designed to inspire and unlock your inner innovator.
             </p>

@@ -9,7 +9,7 @@ import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App flex flex-col justify-center items-center bg-bg-dark-blue">
+      <div className="App flex flex-col justify-center items-center gap-10 lg:gap-4 bg-bg-dark-blue">
         {/* <Navbar/> */}
         <Hero />
         <Events />
