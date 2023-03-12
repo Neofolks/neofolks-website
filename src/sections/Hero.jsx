@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/hero.css";
-import NeofolksHero from "../assets/NeofolksHero.png";
+import NeofolksHero from "../assets/NeofolksHero.webp";
 import TinkerthonArrow from '../assets/TinkerthonArrow.png'
-import NUVlogo from '../assets/NUVlogo.png'
-import Nuvyuvalogo from '../assets/Nuvyuvalogo.png'
+import NUVlogo from '../assets/NUVlogo.webp'
+import Nuvyuvalogo from '../assets/Nuvyuvalogo.webp'
 import RegisterNowButton from "../components/RegisterNowButton";
 import RegisterModal from "../components/RegisterModal";
 
@@ -14,7 +14,7 @@ function Hero() {
         {/* <img src="../assets/BigBGPaper.png" className="absolute bg-cover" id='bg' alt="" /> */}
 
       {/* NUV and NUVyuva imgs */}
-      <div className="w-full flex justify-between items-center p-2 z-10">
+      <div className="w-full flex justify-between items-center p-2">
         <img src={NUVlogo} className="max-w-[150px] md:max-w-none" alt="" />
         <img src={Nuvyuvalogo} className="max-w-[70px] md:max-w-none" alt="" />
       </div>
@@ -22,16 +22,16 @@ function Hero() {
       {/* Neofolks hero title img */}
       <img
         src={NeofolksHero}
-        className="w-[95%] max-w-[800px] z-10"
+        className="w-[95%] max-w-[800px]"
         alt="neofolks hero"
         />
       
       {/* Parent div for buttons and hero text */}
-      <div className="flex flex-col items-center gap-6 z-10">
+      <div className="relative flex flex-col items-center gap-6">
         {/* Tinkerthon arrow img */}
-        {/* <div className="w-[90%]">
-          <img src={TinkerthonArrow} className="max-w-[125px] md:max-w-none" alt="" />
-        </div> */}
+        {/* <div className="w-[90%]"> */}
+          {/* <img src={TinkerthonArrow} className="absolute top-[-10%] left-0 max-w-[125px] md:max-w-none" alt="" /> */}
+        {/* </div> */}
         {/* Buttons */}
         <div className="w-full flex justify-center items-center space-x-4">
             <RegisterModal/>
