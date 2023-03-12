@@ -5,6 +5,7 @@ import Hero from "./sections/Hero";
 import Events from "./sections/Events";
 import Schedule from "./sections/Schedule";
 import { BrowserRouter } from "react-router-dom";
+import About from "./sections/About";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         {/* <Navbar/> */}
         <Hero />
         <Events />
-        <Schedule />
+        {/* <Schedule /> */}
+        <About/>
       </div>
     </BrowserRouter>
   );
