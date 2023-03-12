@@ -1,13 +1,13 @@
 import React, { useRef, useState } from "react";
 // import {XCircleIcon} from '@heroicons/react/24/solid'
 import Xicon from "../assets/icons/Xicon.svg";
-import { Button, TextInput, Toast } from "flowbite-react";
+import { Button, Spinner, TextInput, Toast } from "flowbite-react";
 import CheckIcon from "../assets/icons/CheckIcon.svg";
 
 function RsvpForm({ toggleShowModal }) {
   const [members, setMembers] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [showToast, setShowToast] = useState(false);
+  // const [showToast, setShowToast] = useState(false);
 
   const teamNameRef = useRef();
 
@@ -48,11 +48,11 @@ function RsvpForm({ toggleShowModal }) {
     );
 
     console.log(await response.json());
-    // if(response.status == 201) setShowToast(true)
+    if(response.status == 201) alert("Team Registered!")
     
     teamNameRef.current.value = "";
-    setLoading(false);
     // setShowToast(false)
+    setLoading(false);
     toggleShowModal();
     setMembers([]);
   };
@@ -122,10 +122,14 @@ function RsvpForm({ toggleShowModal }) {
             Add member
           </Button>
           <Button color={"success"} type="submit" disabled={members.length < 1}>
+            {loading && (
+            <div className="mr-3">
+              <Spinner size={"sm"}/>
+            </div>
+            )}
             Register
           </Button>
         </div>
-        {loading && <div className="font-semibold">Loading...</div>}
       </form>
     </>
   );

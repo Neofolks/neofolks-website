@@ -14,7 +14,7 @@ function App() {
         {/* <Navbar/> */}
         <Hero />
         <Events />
-        <Schedule />
+        {/* <Schedule /> */}
         <About/>
       </div>
     </BrowserRouter>

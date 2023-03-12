@@ -3,14 +3,14 @@ import '../styles/events.css'
 import Tinkerthon from '../assets/Tinkerthon.png'
 import CADchaos from '../assets/CADchaos.png'
 import Derby from '../assets/Derby.png'
-import TechTalks from '../assets/TechTalks.png'
+import TechTalks from '../assets/TechTalks.webp'
 import RegisterNowButton from '../components/RegisterNowButton'
 import Greenglow from '../assets/Greenglow.png'
 
 function Events() {
   return (
     <>
-    <div className="relative flex flex-col w-full md:px-28 px-3" id='events'>
+    <div className="relative flex flex-col w-full lg:px-28 px-3" id='events'>
 
         {/* Background glow */}
         <div className='absolute w-full h-full bg-[#F66902] right-0 blur-[100px] opacity-[.15] hidden md:block'></div>
@@ -24,7 +24,7 @@ function Events() {
         {/* Tinkerthon */}
         <div className='relative min-h-[80svh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 md:gap-0'>
             {/* Left side img */}
-            <div className='bg-[#ffffff] bg-opacity-10 aspect-video rounded-xl p-8 md:p-0 w-2/3 max-w-[500px] flex justify-center items-center'>
+            <div className='bg-[#ffffff] bg-opacity-10 aspect-video rounded-xl p-8 md:p-0 w-1/2 min-w-[250px] max-w-[500px] flex justify-center items-center'>
                 <img src={Tinkerthon} className=''  alt="" />
             </div>
 
@@ -42,7 +42,7 @@ function Events() {
     </div>
 
     {/* CAD Chaos */}
-    <div className='relative min-h-[80svh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 md:gap-0 w-full md:px-28 px-3'>
+    <div className='relative min-h-[80svh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 md:gap-0 w-full lg:px-28 px-3'>
 
         {/* Background glow */}
         <div className='absolute w-full h-full bg-[#5AC99a] right-0 blur-[100px] opacity-10 hidden md:block'></div>
@@ -59,19 +59,19 @@ function Events() {
             <RegisterNowButton/>
         </div>
         {/* Right side img */}
-        <div className='bg-[#ffffff] bg-opacity-10 p-4 md:p-0 aspect-video w-2/3 max-w-[500px] rounded-xl flex justify-center items-center'>
+        <div className='bg-[#ffffff] bg-opacity-10 p-4 md:p-0 aspect-video w-1/2 min-w-[250px] max-w-[500px] rounded-xl flex justify-center items-center'>
             <img src={CADchaos} className='aspect-video'  alt="" />
         </div>
     </div>
 
     {/* Derby Race */}
-    <div className='relative min-h-[80svh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 md:gap-0 w-full md:px-28 px-3'>
+    <div className='relative min-h-[80svh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 md:gap-0 w-full lg:px-28 px-3'>
 
         {/* Background glow */}
         <div className='absolute w-full h-full bg-[#A6A739] right-0 blur-[100px] opacity-[.15] hidden md:block'></div>
 
         {/* Left side img */}
-        <div className='bg-[#838383] aspect-video bg-opacity-10 p-4 md:p-0 rounded-xl w-2/3 max-w-[500px] flex justify-center items-center'>
+        <div className='bg-[#838383] aspect-video bg-opacity-10 p-4 md:p-0 rounded-xl w-1/2 min-w-[250px] max-w-[500px] flex justify-center items-center'>
             <img src={Derby} className='aspect-video' alt="" />
         </div>
 
@@ -89,7 +89,7 @@ function Events() {
     </div>
 
     {/* Tech Talks */}
-    <div className='relative min-h-[80svh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 md:gap-0 w-full md:px-28 px-3'>
+    <div className='relative min-h-[80svh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 md:gap-0 w-full lg:px-28 px-3'>
 
         {/* Background glow */}
         <div className='absolute w-full h-full bg-[#4379E2] right-0 blur-[100px] opacity-[.15] hidden md:block'></div>
@@ -106,7 +106,7 @@ function Events() {
             <RegisterNowButton/>
         </div>
         {/* Right side img */}
-        <div className='bg-[#838383] aspect-video bg-opacity-10 p-4 md:p-0 w-2/3 max-w-[500px] rounded-xl flex justify-center items-center'>
+        <div className='bg-[#838383] aspect-video bg-opacity-10 p-4 md:p-0 w-1/2 min-w-[250px] max-w-[500px] rounded-xl flex justify-center items-center'>
             <img src={TechTalks} className='aspect-video' alt="" />
         </div>
     </div>
