@@ -15,9 +15,9 @@ function App() {
         {/* <Navbar/> */}
         <Hero />
         <Events />
-        {/* <Schedule /> */}
-        {/* <About/> */}
-        {/* <TinkerBottom/> */}
+        <Schedule />
+        <About/>
+        <TinkerBottom/>
       </div>
     </BrowserRouter>
   );
