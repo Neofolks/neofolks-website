@@ -10,7 +10,7 @@ import BlueThing from '../assets/BlueThing.png'
 import YellowThing from '../assets/YellowThing.webp'
 import GreenThing from '../assets/GreenThing.png'
 import RedThing from '../assets/RedThing.png'
-
+import RedThing2 from '../assets/RedThing2.png'
 
 function Events() {
   return (
@@ -21,7 +21,8 @@ function Events() {
             <div className='absolute w-full h-full bg-[#F66902] right-0 blur-[100px] opacity-[.15] hidden md:block'></div>
 
             {/* Tech events big heading */}
-            <div className='flex flex-col items-end pr-2 text-white'>
+            <div className='relative flex flex-col items-end pr-2 text-white'>
+                <img src={RedThing2} className='absolute top-[-50%] right-[-2%]' alt="" />
                 <h1 className="text-5xl md:text-7xl font-['MonumentExtended'] text-end text-[#E3E3E3]">Tech Events</h1>
                 <h1 className="text-2xl md:text-2xl font-['montserrat']">@ Nuvyuva 2023</h1>
             </div>

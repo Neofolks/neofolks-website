@@ -6,6 +6,7 @@ import NUVlogo from '../assets/NUVlogo.webp'
 import Nuvyuvalogo from '../assets/Nuvyuvalogo.webp'
 import RegisterNowButton from "../components/RegisterNowButton";
 import RegisterModal from "../components/RegisterModal";
+import Bulb from '../assets/Bulb.webp'
 
 function Hero() {
   return (
@@ -47,6 +48,9 @@ function Hero() {
             </p>
         </div>
       </div>
+
+      <img src={Bulb} className="absolute w-1/4 left-0 bottom-[-30%] hidden lg:block z-10" alt="" />
+      <div className='absolute w-1/4 aspect-square rounded-full bottom-[-25%] left-[-5%] bg-[#F66902] blur-3xl opacity-[.15] hidden lg:block'></div>
     </div>
   );
 }
