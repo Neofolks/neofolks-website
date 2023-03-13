@@ -11,13 +11,13 @@ import TinkerBottom from "./sections/TinkerBottom";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App flex flex-col justify-center items-center gap-10 lg:gap-4 bg-bg-dark-blue">
+      <div className="App flex flex-col justify-center items-center gap-10 lg:gap-4 bg-bg-dark-blue overflow-x-hidden">
         {/* <Navbar/> */}
         <Hero />
         <Events />
-        <Schedule />
-        <About/>
-        <TinkerBottom/>
+        {/* <Schedule /> */}
+        {/* <About/> */}
+        {/* <TinkerBottom/> */}
       </div>
     </BrowserRouter>
   );
