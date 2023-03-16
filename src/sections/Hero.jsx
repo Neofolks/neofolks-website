@@ -1,12 +1,13 @@
 import React from "react";
 import "../styles/hero.css";
 import NeofolksHero from "../assets/NeofolksHero.webp";
-import TinkerthonArrow from '../assets/TinkerthonArrow.png'
+// import TinkerthonArrow from '../assets/TinkerthonArrow.png'
 import NUVlogo from '../assets/NUVlogo.webp'
 import Nuvyuvalogo from '../assets/Nuvyuvalogo.webp'
-import RegisterNowButton from "../components/RegisterNowButton";
 import RegisterModal from "../components/RegisterModal";
 import Bulb from '../assets/Bulb.webp'
+import EyeIcon from '../assets/icons/EyeIcon.svg'
+import { HashLink } from "react-router-hash-link";
 
 function Hero() {
   return (
@@ -33,10 +34,16 @@ function Hero() {
         {/* <div className="w-[90%]"> */}
           {/* <img src={TinkerthonArrow} className="absolute top-[-10%] left-0 max-w-[125px] md:max-w-none" alt="" /> */}
         {/* </div> */}
+
         {/* Buttons */}
         <div className="w-full flex justify-center items-center space-x-4">
             <RegisterModal/>
-            <button disabled className="bg-[#232323] p-2 px-6 rounded-3xl text-white hover:bg-[#afafaf] hover:text-black font-semibold">View Events</button>
+            <HashLink to={"#events"} smooth>
+              <button className="bg-[#232323] py-2 px-4 rounded-3xl text-white hover:invert font-semibold cursor-pointer flex justify-center items-center gap-1">
+                <img src={EyeIcon} alt="" />
+                <h3>View Events</h3>
+              </button>
+            </HashLink>
         </div>
         {/* Hero Text */}
         <div className="md:w-1/2 md:max-w-[1000px] px-2 md:px-0 space-y-3 pb-10">
@@ -49,6 +56,7 @@ function Hero() {
         </div>
       </div>
 
+      {/* Lightbulb design element */}
       <img src={Bulb} className="absolute w-1/4 left-0 bottom-[-30%] hidden lg:block z-10" alt="" />
       <div className='absolute w-1/4 aspect-square rounded-full bottom-[-25%] left-[-5%] bg-[#F66902] blur-3xl opacity-[.15] hidden lg:block'></div>
     </div>

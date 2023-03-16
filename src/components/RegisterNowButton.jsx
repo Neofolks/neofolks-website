@@ -4,8 +4,9 @@ import ArrowRight from '../assets/icons/ArrowRight.svg'
 
 function RegisterNowButton() {
   return (
-    <button className="bg-[#f7f7f8] p-2 px-6 rounded-3xl max-w-[150px] font-semibold text-black" id="register-button">
+    <button className="bg-[#f7f7f8] py-2 px-4 rounded-3xl font-semibold text-black flex justify-center items-center gap-1" id="register-button">
       <h3>Register Now</h3>
+      <img src={ArrowRight} alt="" />
     </button>
   );
 }
