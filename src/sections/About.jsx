@@ -12,7 +12,7 @@ function About() {
     
         {/* Title */}
         <div className="w-full flex flex-col justify-center items-center gap-2">
-            <h1 className="text-5xl md:text-7xl font-['MonumentExtended'] text-center text-[#E3E3E3]">About Us</h1>
+            <h1 className="text-5xl md:text-7xl font-['MonumentExtended'] text-center heading-gradient">About Us</h1>
         </div>
 
         {/* About us text */}

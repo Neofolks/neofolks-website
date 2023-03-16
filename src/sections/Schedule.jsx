@@ -6,7 +6,7 @@ function Schedule() {
     <div className="h-fit w-full flex flex-col gap-4 text-white" id="schedule">
       {/* Title */}
       <div className="w-full flex flex-col justify-center items-center gap-2">
-        <h1 className="text-5xl lg:text-7xl font-['MonumentExtended'] text-center">Event Schedule</h1>
+        <h1 className="text-5xl lg:text-7xl font-['MonumentExtended'] text-center heading-gradient">Event Schedule</h1>
         <h2 className="text-lg font-['montserrat']">Mark your calendars</h2>
       </div>
 

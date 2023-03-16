@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <>
     {visible && (
-      <nav className="fixed bottom-0 w-[95%] min-w-[300px] md:max-w-[500px] h-[8vh] min-h-[70px] max-h-[80px] bg-[#1d1d1d] bg-opacity-90 rounded-xl m-2 px-3 gap-2 flex justify-center items-center z-10">
+      <nav className="fixed bottom-0 w-[95%] min-w-[300px] md:max-w-[500px] h-[8vh] min-h-[70px] max-h-[80px] bg-[#1d1d1d] bg-opacity-70 rounded-xl m-2 px-3 gap-2 flex justify-center items-center z-20">
         {/* First link */}
         <div className="w-1/4 bg-[#42486B] h-[70%] rounded-md flex justify-center items-center">
           <div className="w-[90%] h-[80%] border-2 border-[#6d76a6] rounded-md flex justify-center items-center cursor-pointer text-[#cccfe0] hover:bg-[#6d76a6] text-sm">

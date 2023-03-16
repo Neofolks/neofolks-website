@@ -6,7 +6,7 @@ import RegisterModal from '../components/RegisterModal'
 
 function TinkerBottom() {
   return (
-    <div className="relative h-fit w-full text-white flex flex-col items-center gap-10 px-2 md:mt-10" id="about">
+    <div className="relative h-fit min-h-[500px] w-full text-white flex flex-col items-center gap-10 px-2 md:mt-10" id="about">
 
         {/* Tinkerthon bigboi image */}
         <img src={TinkerthonBigboi} className='w-[95%] max-w-[800px]' alt="" />
@@ -24,7 +24,7 @@ function TinkerBottom() {
 
 
         {/* Footer images neofolks & tinkerthon */}
-        <div className='w-[95%] flex justify-between'>
+        <div className='hidden lg:flex w-[95%] justify-between mb-4'>
             <div className='max-w-[100px] lg:max-w-[150px]'>
                 <img src={NeofolksSmol} alt="" />
             </div>

@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App flex flex-col justify-center items-center gap-10 lg:gap-4 bg-bg-dark-blue overflow-x-hidden">
-        {/* <Navbar/> */}
+        <Navbar/>
         <Hero />
         <Events />
         <Schedule />
