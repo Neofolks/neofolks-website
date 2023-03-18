@@ -15,7 +15,7 @@ function Navbar() {
       sections.forEach(section => {
         const sectionTop = section.offsetTop
         const sectionHeight = section.clientHeight
-        if(scrollY >= sectionTop) current = section.getAttribute('id')
+        if(scrollY >= (sectionTop) - sectionHeight / 3) current = section.getAttribute('id')
       })
       navLinks.forEach(link => {
         link.classList.remove('active-nav-link')
