@@ -14,8 +14,8 @@ import RedThing2 from '../assets/RedThing2.png'
 
 function Events() {
   return (
-    <div className='relative w-full lg:mb-[10%]'>
-        <div className="relative flex flex-col w-full lg:px-28 px-3" id='events'>
+    <div className='relative w-full lg:mb-[10%] section' id='events'>
+        <div className="relative flex flex-col w-full lg:px-28 px-3">
 
             {/* Background glow */}
             <div className='absolute w-full h-full bg-[#F66902] right-0 blur-[100px] opacity-[.15] hidden md:block'></div>

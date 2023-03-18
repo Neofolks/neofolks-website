@@ -3,7 +3,7 @@ import ScheduleImg from '../assets/Schedule.webp'
 
 function Schedule() {
   return (
-    <div className="h-fit w-full flex flex-col gap-4 text-white" id="schedule">
+    <div className="h-fit w-full flex flex-col gap-4 text-white section" id="schedule">
       {/* Title */}
       <div className="w-full flex flex-col justify-center items-center gap-2">
         <h1 className="text-5xl lg:text-7xl font-['MonumentExtended'] text-center heading-gradient">Event Schedule</h1>

@@ -11,6 +11,10 @@
   @apply bg-clip-text text-transparent bg-gradient-to-r from-[#e3e3e3] to-[#e3e3e340]
 }
 
+.active-nav-link{
+  @apply w-[90%] h-[80%] bg-white border-2 border-[#6d76a6] rounded-md flex justify-center items-center cursor-pointer text-black hover:text-white hover:bg-[#6d76a6] text-sm
+}
+
 @font-face {
   font-family: "MonumentExtended";
   src: local("MonumentExtended-Regular"), url("./fonts/MonumentExtended-Regular.otf") format("opentype")

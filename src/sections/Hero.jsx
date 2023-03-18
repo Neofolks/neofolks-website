@@ -11,7 +11,7 @@ import { HashLink } from "react-router-hash-link";
 
 function Hero() {
   return (
-    <div className="relative w-full min-h-[100svh] bg-bg-dark-blue flex flex-col justify-between items-center" id="home">
+    <div className="relative w-full min-h-[100svh] bg-bg-dark-blue flex flex-col justify-between items-center section" id="home">
       {/* BG PAPER goes here */}
         {/* <img src="../assets/BigBGPaper.png" className="absolute bg-cover" id='bg' alt="" /> */}
 

@@ -3,7 +3,7 @@ import TelephoneImg from '../assets/Telephone.webp'
 
 function About() {
   return (
-    <div className="relative h-fit lg:min-h-[750px] w-full text-white flex flex-col items-center gap-10 px-2" id="about">
+    <div className="relative h-fit lg:min-h-[750px] w-full text-white flex flex-col items-center gap-10 px-2 section" id="about">
 
         {/* Telephone img */}
         <img src={TelephoneImg} className='hidden lg:block absolute bottom-0 left-0 z-10' alt="" />
