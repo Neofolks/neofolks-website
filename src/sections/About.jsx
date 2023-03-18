@@ -17,7 +17,7 @@ function About() {
 
         {/* About us text */}
         <div className='w-full md:w-1/2 lg:w-1/3 flex justify-center items-center'>
-            <p className='text-center text-xl'>Liveblocks provides developers with a complete toolkit to embed performant collaboration features to your product remarkably fast.Liveblocks provides developers with a complete toolkit to embed performant collaboration features to your product remarkably fast.</p>
+            <p className='text-center text-xl'>Neofolks is a student based community which aims to enhance youth participation in tech events to broaden their spectrum and to provide a platform to help them upheave their tech journey by connecting with like-minded individuals.</p>
         </div>
 
         {/* Contact button */}

@@ -5,6 +5,7 @@ import CADchaos from '../assets/CADchaos.webp'
 import Derby from '../assets/Derby.webp'
 import TechTalks from '../assets/TechTalks.webp'
 import RegisterNowButton from '../components/RegisterNowButton'
+import RegisterModal from '../components/RegisterModal'
 import NewspaperMan from '../assets/NewspaperMan.webp'
 import BlueThing from '../assets/BlueThing.png'
 import YellowThing from '../assets/YellowThing.webp'
@@ -42,9 +43,9 @@ function Events() {
                         <h2 className='text-4xl md:text-6xl text-center md:text-end text-white'>A 36 hour Tinkerthon</h2>
                     </div>
                     <div>
-                        <p className='text-center md:text-end md:text-xl text-[#959499]'>Add collaborative experiences you know and love like text editors, forms, creative tools and whiteboards with Liveblocks APIs and tools.</p>
+                        <p className='text-center md:text-end md:text-xl text-[#959499]'>“Where Ideas Become Reality” A 36-hour in-campus event where participants will transform their unique ideas into a real-world solution. It is organized in light of contemporary start-ups for young adults like us to gain knowledge in which a group may have a maximum of 4 people. Participants are expected to solve real-world problems, and the 3 finest and leading prototypes will be funded to grow and fix real-world errors. This event is the perfect opportunity to showcase your skills, broaden your knowledge spectrum, and have fun creating your reality!</p>
                     </div>
-                    <RegisterNowButton/>
+                    <RegisterModal/>
                 </div>
             </div>
         </div>
@@ -64,7 +65,7 @@ function Events() {
                     <h2 className='text-3xl md:text-5xl text-center md:text-start text-white'>(CAD)</h2>
                 </div>
                 <div>
-                    <p className='text-center md:text-start md:text-xl text-[#959499]'>Add collaborative experiences you know and love like text editors, forms, creative tools and whiteboards with Liveblocks APIs and tools.</p>
+                    <p className='text-center md:text-start md:text-xl text-[#959499]'>"Innovation Beyond Limits!" A design challenge where participants will be creating a 3D model using CAD software. The challenge will have five intrigue levels testing your creativity and problem-solving skills.</p>
                 </div>
                 <RegisterNowButton/>
             </div>
@@ -94,7 +95,7 @@ function Events() {
                     <h2 className='text-3xl md:text-5xl text-center md:text-end text-white'>(Car Modelling)</h2>
                 </div>
                 <div>
-                    <p className='text-center md:text-end md:text-xl text-[#959499]'>Add collaborative experiences you know and love like text editors, forms, creative tools and whiteboards with Liveblocks APIs and tools.</p>
+                    <p className='text-center md:text-end md:text-xl text-[#959499]'>“Speed Meets Creativity!" Create a four-wheeled vehicle using only wood, nails, and wheels, which would be purely mechanical-based construction without the use of motors. Compete on a designated path and the fastest one to cross the finish line wins!</p>
                 </div>
                 <RegisterNowButton/>
             </div>
@@ -116,7 +117,7 @@ function Events() {
                     <h2 className='text-3xl md:text-5xl text-center md:text-start text-white'>ft. Neofolks</h2>
                 </div>
                 <div>
-                    <p className='text-center md:text-start md:text-xl text-[#959499]'>Add collaborative experiences you know and love like text editors, forms, creative tools and whiteboards with Liveblocks APIs and tools.</p>
+                    <p className='text-center md:text-start md:text-xl text-[#959499]'>"Make a good Tech-pression with the top-notch Tech-Gurus". It will include talks as well as engaging workshops from various industry and community experts working in fields related to the Tech, Startup, and Design Space.</p>
                 </div>
                 <RegisterNowButton/>
             </div>
