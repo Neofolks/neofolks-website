@@ -11,7 +11,7 @@ import { HashLink } from "react-router-hash-link";
 
 function Hero() {
   return (
-    <div className="relative w-full min-h-[100svh] bg-bg-dark-blue flex flex-col justify-between items-center section" id="home">
+    <div className="relative w-full min-h-[80svh] lg:min-h-[95svh] bg-bg-dark-blue flex flex-col justify-start items-center section" id="home">
       {/* BG PAPER goes here */}
         {/* <img src="../assets/BigBGPaper.png" className="absolute bg-cover" id='bg' alt="" /> */}
 
@@ -29,7 +29,7 @@ function Hero() {
         />
       
       {/* Parent div for buttons and hero text */}
-      <div className="relative flex flex-col items-center gap-6">
+      <div className="relative flex flex-col items-center gap-6 mt-4">
         {/* Tinkerthon arrow img */}
         {/* <div className="w-[90%]"> */}
           {/* <img src={TinkerthonArrow} className="absolute top-[-10%] left-0 max-w-[125px] md:max-w-none" alt="" /> */}
@@ -39,20 +39,20 @@ function Hero() {
         <div className="w-full flex flex-wrap gap-1 justify-center items-center space-x-4">
             <RegisterModal buttonText={"Tinkerthon RSVP"}/>
             <HashLink to={"#events"} smooth>
-              <button className="bg-[#232323] py-2 px-4 rounded-3xl text-white hover:invert font-semibold cursor-pointer flex justify-center items-center gap-1">
+              <button className="bg-[#232323] py-2 px-4 rounded-3xl text-white hover:invert font-semibold cursor-pointer flex justify-center items-center gap-1 text-sm md:text-base">
                 <img src={EyeIcon} alt="" />
                 <h3>View Events</h3>
               </button>
             </HashLink>
         </div>
         {/* Hero Text */}
-        <div className="md:w-1/2 md:max-w-[1000px] px-2 md:px-0 space-y-3 pb-10">
-            <p className="text-white text-center text-md md:text-xl">
+        <div className="md:w-1/2 md:max-w-[1000px] px-2 md:px-0 pb-10">
+            <p className="text-white text-center text-lg md:text-xl">
                 Are you ready for an unforgettable experience! Join us at Tinkerthon, where you'll have the opportunity to connect with aspiring individuals, participate in interactive sessions, and hear from industry experts. This event is designed to inspire and unlock your inner innovator.
             </p>
-            <p className="text-white text-center text-md md:text-xl">
+            {/* <p className="text-white text-center text-md md:text-xl">
             Whether you're interested in learning new skills, networking with peers, or simply having fun, Tinkerthon has something for everyone. So don't miss out on this chance to grow and discover new opportunities. Register now and be a part of this exciting 36 hour event!
-            </p>
+            </p> */}
         </div>
       </div>
 

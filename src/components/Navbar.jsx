@@ -10,11 +10,12 @@ function Navbar() {
     const navLinks = document.querySelectorAll('.nav-link')
     
     window.addEventListener('scroll', () =>{
-      if(window.scrollY >= 150) setVisible(true)
+      if(window.scrollY >= 100) setVisible(true)
       let current = ''
       sections.forEach(section => {
         const sectionTop = section.offsetTop
         const sectionHeight = section.clientHeight
+        if (scrollY <= 200) current = 'home'
         if(scrollY >= (sectionTop) - sectionHeight / 3) current = section.getAttribute('id')
       })
       navLinks.forEach(link => {

@@ -121,7 +121,7 @@ function Events() {
                 <div>
                     <p className='text-center md:text-start md:text-xl text-[#959499]'>"Make a good Tech-pression with the top-notch Tech-Gurus". It will include talks as well as engaging workshops from various industry and community experts working in fields related to the Tech, Startup, and Design Space.</p>
                 </div>
-                <RegisterNowButton/>
+                <RegisterNowButton link={"https://form.typeform.com/to/IW6973EO"}/>
             </div>
             {/* Right side img */}
             <div className='bg-[#838383] aspect-video bg-opacity-10 p-4 md:p-0 w-1/2 min-w-[250px] max-w-[500px] rounded-xl flex justify-center items-center'>

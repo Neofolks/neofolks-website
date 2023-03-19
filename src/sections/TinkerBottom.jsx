@@ -20,11 +20,16 @@ function TinkerBottom() {
         {/* Register button */}
         <RegisterModal/>
 
-        {/* Map location stuff */}
+        {/* TODO Map location stuff */}
 
 
+        {/* Address */}
+        <div className='text-white font-medium text-center text-lg'>
+            <h3>Address: Navrachana University, Vasna-Bhayli main road, Vadodara, Gujarat 391410</h3>
+        </div>
+        
         {/* Footer images neofolks & tinkerthon */}
-        <div className='hidden lg:flex w-[95%] justify-between mb-4'>
+        <div className='flex w-[95%] justify-between mb-4'>
             <div className='max-w-[100px] lg:max-w-[150px]'>
                 <img src={NeofolksSmol} alt="" />
             </div>
