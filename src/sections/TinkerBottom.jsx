@@ -14,7 +14,7 @@ function TinkerBottom() {
         {/* Register text */}
         <div className='w-full lg:w-1/2 flex flex-col gap-4 justify-center items-center'>
             <h1 className="text-center text-4xl md:text-6xl font-['familjen_grotesk'] font-semibold">Register Now for Tinkerthon</h1>
-            <p className='text-center md:text-xl text-[#959499]'>Add collaborative experiences you know and love like text editors, forms, creative tools and whiteboards with Liveblocks APIs and tools.</p>
+            {/* <p className='text-center md:text-xl text-[#959499]'>Add collaborative experiences you know and love like text editors, forms, creative tools and whiteboards with Liveblocks APIs and tools.</p> */}
         </div>
 
         {/* Register button */}

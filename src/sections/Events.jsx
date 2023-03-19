@@ -12,6 +12,7 @@ import YellowThing from '../assets/YellowThing.webp'
 import GreenThing from '../assets/GreenThing.png'
 import RedThing from '../assets/RedThing.png'
 import RedThing2 from '../assets/RedThing2.png'
+import TinkerTracksPopover from '../components/TinkerTracksPopover'
 
 function Events() {
   return (
@@ -44,6 +45,7 @@ function Events() {
                     </div>
                     <div>
                         <p className='text-center md:text-end md:text-xl text-[#959499]'>“Where Ideas Become Reality” A 36-hour in-campus event where participants will transform their unique ideas into a real-world solution. It is organized in light of contemporary start-ups for young adults like us to gain knowledge in which a group may have a maximum of 4 people. Participants are expected to solve real-world problems, and the 3 finest and leading prototypes will be funded to grow and fix real-world errors. This event is the perfect opportunity to showcase your skills, broaden your knowledge spectrum, and have fun creating your reality!</p>
+                        <TinkerTracksPopover/>
                     </div>
                     <RegisterModal/>
                 </div>
@@ -67,7 +69,7 @@ function Events() {
                 <div>
                     <p className='text-center md:text-start md:text-xl text-[#959499]'>"Innovation Beyond Limits!" A design challenge where participants will be creating a 3D model using CAD software. The challenge will have five intrigue levels testing your creativity and problem-solving skills.</p>
                 </div>
-                <RegisterNowButton/>
+                <RegisterNowButton link={"https://form.typeform.com/to/IW6973EO"}/>
             </div>
             {/* Right side img */}
             <div className='bg-[#ffffff] bg-opacity-10 p-4 md:p-0 aspect-video w-1/2 min-w-[250px] max-w-[500px] rounded-xl flex justify-center items-center'>
@@ -97,7 +99,7 @@ function Events() {
                 <div>
                     <p className='text-center md:text-end md:text-xl text-[#959499]'>“Speed Meets Creativity!" Create a four-wheeled vehicle using only wood, nails, and wheels, which would be purely mechanical-based construction without the use of motors. Compete on a designated path and the fastest one to cross the finish line wins!</p>
                 </div>
-                <RegisterNowButton/>
+                <RegisterNowButton link={"https://form.typeform.com/to/IW6973EO"}/>
             </div>
         </div>
 
@@ -130,7 +132,6 @@ function Events() {
     {/* Newspaper man image */}
     <img src={NewspaperMan} className='hidden lg:block md:max-w-[250px] xl:max-w-none absolute bottom-[-5%] left-0 right-0 mx-auto z-10' alt="" />
     <div className='absolute w-[400px] h-[400px] rounded-full bottom-[-5%] left-0 right-0 mx-auto bg-[#4379E2] blur-[100px] opacity-[.15] hidden lg:block'></div>
-
 
     </div>
   )

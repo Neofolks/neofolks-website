@@ -21,7 +21,9 @@ function About() {
         </div>
 
         {/* Contact button */}
-        <button disabled className="bg-[#232323] p-2 px-6 rounded-3xl text-white hover:bg-[#afafaf] hover:text-black font-semibold cursor-pointer">Contact Us</button>
+        <a href="mailto: neofolks@nuv.ac.in">
+          <button className="bg-[#232323] p-2 px-6 rounded-3xl text-white hover:bg-[#afafaf] hover:text-black font-semibold cursor-pointer">Contact Us</button>
+        </a>
   </div>
   )
 }

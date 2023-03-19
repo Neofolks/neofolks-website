@@ -1,5 +1,5 @@
 import React from "react";
-import ScheduleImg from '../assets/Schedule.webp'
+import ScheduleImg from '../assets/ScheduleImg.webp'
 
 function Schedule() {
   return (

@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import RegisterNowButton from "./RegisterNowButton";
 import RsvpForm from "./RsvpForm";
-import Xicon from "../assets/icons/Xicon.svg";
-import { Button, Toast } from "flowbite-react";
-import CheckIcon from "../assets/icons/CheckIcon.svg";
+import { Button} from "flowbite-react";
 
-function RegisterModal() {
+function RegisterModal({buttonText}) {
   const [showModal, setShowModal] = useState(false);
 
   const toggleShow = () => {
@@ -15,7 +13,7 @@ function RegisterModal() {
   return (
     <>
       <div onClick={toggleShow}>
-        <RegisterNowButton />
+        <RegisterNowButton text={buttonText ?? null}/>
       </div>
 
       {/* full screen overlay */}

@@ -36,8 +36,8 @@ function Hero() {
         {/* </div> */}
 
         {/* Buttons */}
-        <div className="w-full flex justify-center items-center space-x-4">
-            <RegisterModal/>
+        <div className="w-full flex flex-wrap gap-1 justify-center items-center space-x-4">
+            <RegisterModal buttonText={"Tinkerthon RSVP"}/>
             <HashLink to={"#events"} smooth>
               <button className="bg-[#232323] py-2 px-4 rounded-3xl text-white hover:invert font-semibold cursor-pointer flex justify-center items-center gap-1">
                 <img src={EyeIcon} alt="" />
