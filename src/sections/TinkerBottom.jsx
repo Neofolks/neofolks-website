@@ -22,30 +22,23 @@ function TinkerBottom() {
 
         {/* TODO Map location stuff */}
 
-        <div style={{display: 'flex', flexDirection: 'column', height: '100vh',left:'0'}}className="earth3dmap-com">
+        <div style={{display: 'flex', flexDirection: 'column', height: '100vh'}}className="earth3dmap-com w-full justify-center lg:justify-start">
       <iframe
         id="iframemap"
         src="https://maps.google.com/maps?q=Navrachna+University%2CVasna-Bhayli+Main+road%2Cvadodara%2CGujarat%2CIndia&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-        width="100%"
-        height="300"
-        frameBorder="0"
+        height="500px"
+        className='w-full lg:w-1/2'
         scrolling="no"
         style={{
           color: '#333',
           fontSize: '14px',
           fontFamily: 'Arial, Helvetica, sans-serif',
           textAlign: 'left',
-          padding: '10px',
-          marginLeft:'-350px',
-          marginRight:'400px',
-          marginTop:'200px'
-         
-                  
+          padding: '10%',      
           
         }}
       />
-
-      
+   
       <div style={{
           color: '#333',
           fontSize: '14px',
