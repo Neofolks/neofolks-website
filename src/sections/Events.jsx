@@ -40,11 +40,12 @@ function Events() {
                 <div className='w-full md:w-1/2 lg:w-1/3 flex flex-col gap-4 md:items-end items-center'>
                     <div className="relative font-['familjen_grotesk']">
                         {/* Red design behind text */}
-                        <img src={RedThing} className='absolute w-2/3 right-[-20%] top-[-20%] lg:top-[-60%]' alt="" />
+                        <img src={RedThing} className='absolute hidden 2xl:block w-2/3 right-[-20%] top-[-20%] lg:top-[-60%]' alt="" />
                         <h2 className='text-4xl md:text-6xl text-center md:text-end text-white'>A 36 hour Tinkerthon</h2>
+                        <h2 className='text-xl md:text-2xl xl:text-3xl italic text-center md:text-end text-white'>"Where ideas become reality"</h2>
                     </div>
                     <div>
-                        <p className='text-center md:text-end md:text-xl text-[#959499]'>“Where Ideas Become Reality” A 36-hour in-campus event where participants will transform their unique ideas into a real-world solution. It is organized in light of contemporary start-ups for young adults like us to gain knowledge in which a group may have a maximum of 4 people. Participants are expected to solve real-world problems, and the 3 finest and leading prototypes will be funded to grow and fix real-world errors. This event is the perfect opportunity to showcase your skills, broaden your knowledge spectrum, and have fun creating your reality!</p>
+                        <p className='text-center md:text-end md:text-xl text-[#959499]'>A 36-hour in-campus event where participants will transform their unique ideas into a real-world solution. It is organized in light of contemporary start-ups for young adults like us to gain knowledge in which a group may have a maximum of 5 people. Participants are expected to solve real-world problems, and the 3 finest and leading prototypes will be funded to grow and fix real-world errors. This event is the perfect opportunity to showcase your skills, broaden your knowledge spectrum, and have fun creating your reality!</p>
                         <TinkerTracksPopover/>
                     </div>
                     <RegisterModal/>
@@ -64,10 +65,11 @@ function Events() {
                     {/* Green design behind text */}
                     <img src={GreenThing} className='absolute left-[-50%] top-[-20%] lg:top-[-30%] ' alt="" />
                     <h2 className="text-4xl md:text-6xl text-center md:text-start text-white font-['familjen_grotesk']">CAD Chaos</h2>
-                    <h2 className='text-3xl md:text-5xl text-center md:text-start text-white'>(CAD)</h2>
+                    {/* <h2 className='text-3xl md:text-5xl text-center md:text-start text-white'>(CAD)</h2> */}
+                    <h2 className='text-xl md:text-2xl xl:text-3xl italic text-center md:text-end text-white'>"Innovation Beyond Limits!"</h2>
                 </div>
                 <div>
-                    <p className='text-center md:text-start md:text-xl text-[#959499]'>"Innovation Beyond Limits!" A design challenge where participants will be creating a 3D model using CAD software. The challenge will have five intrigue levels testing your creativity and problem-solving skills.</p>
+                    <p className='text-center md:text-start md:text-xl text-[#959499]'>A design challenge where participants will be creating a 3D model using CAD software. The challenge will have five intrigue levels testing your creativity and problem-solving skills.</p>
                 </div>
                 <RegisterNowButton link={"https://form.typeform.com/to/IW6973EO"}/>
             </div>
@@ -95,9 +97,10 @@ function Events() {
                     <img src={YellowThing} className='absolute w-4/5 top-[-40%] lg:top-[-60%] right-[-20%] -z-10' alt="" />
                     <h2 className='text-4xl md:text-6xl text-center md:text-end text-white'>Derby Race</h2>
                     <h2 className='text-3xl md:text-5xl text-center md:text-end text-white'>(Car Modelling)</h2>
+                    <h2 className='text-xl md:text-2xl xl:text-3xl italic text-center md:text-end text-white'>"Speed Meets Creativity!"</h2>
                 </div>
                 <div>
-                    <p className='text-center md:text-end md:text-xl text-[#959499]'>“Speed Meets Creativity!" Create a four-wheeled vehicle using only wood, nails, and wheels, which would be purely mechanical-based construction without the use of motors. Compete on a designated path and the fastest one to cross the finish line wins!</p>
+                    <p className='text-center md:text-end md:text-xl text-[#959499]'>Create a four-wheeled vehicle using only wood, nails, and wheels, which would be purely mechanical-based construction without the use of motors. Compete on a designated path and the fastest one to cross the finish line wins!</p>
                 </div>
                 <RegisterNowButton link={"https://form.typeform.com/to/IW6973EO"}/>
             </div>
@@ -117,9 +120,10 @@ function Events() {
                     {/* Actual text */}
                     <h2 className='text-4xl md:text-6xl text-center md:text-start text-white'>Tech Talks</h2>
                     <h2 className='text-3xl md:text-5xl text-center md:text-start text-white'>ft. Neofolks</h2>
+                    <h2 className='text-xl md:text-2xl xl:text-3xl italic text-center md:text-left text-white'>"Make a good Tech-pression with the top-notch Tech Gurus"</h2>
                 </div>
                 <div>
-                    <p className='text-center md:text-start md:text-xl text-[#959499]'>"Make a good Tech-pression with the top-notch Tech-Gurus". It will include talks as well as engaging workshops from various industry and community experts working in fields related to the Tech, Startup, and Design Space.</p>
+                    <p className='text-center md:text-start md:text-xl text-[#959499]'>It will include talks as well as engaging workshops from various industry and community experts working in fields related to the Tech, Startup, and Design Space.</p>
                 </div>
                 <RegisterNowButton link={"https://form.typeform.com/to/IW6973EO"}/>
             </div>

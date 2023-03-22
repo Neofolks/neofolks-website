@@ -4,6 +4,7 @@ import NeofolksHero from "../assets/NeofolksHero.webp";
 // import TinkerthonArrow from '../assets/TinkerthonArrow.png'
 import NUVlogo from '../assets/NUVlogo.webp'
 import Nuvyuvalogo from '../assets/Nuvyuvalogo.webp'
+import SSIPLogo from '../assets/SSIPLogo.png'
 import RegisterModal from "../components/RegisterModal";
 import Bulb from '../assets/Bulb.webp'
 import EyeIcon from '../assets/icons/EyeIcon.svg'
@@ -17,8 +18,11 @@ function Hero() {
 
       {/* NUV and NUVyuva imgs */}
       <div className="w-full flex justify-between items-center p-2">
-        <img src={NUVlogo} className="max-w-[150px] md:max-w-none" alt="" />
-        <img src={Nuvyuvalogo} className="max-w-[70px] md:max-w-none" alt="" />
+        <div className="flex justify-center items-center">
+          <img src={NUVlogo} className="max-w-[100px] lg:max-w-none" alt="" />
+          <img src={SSIPLogo} className="max-w-[50px] lg:max-w-[120px]" alt="" />
+        </div>
+        <img src={Nuvyuvalogo} className="max-w-[50px] lg:max-w-none" alt="" />
       </div>
 
       {/* Neofolks hero title img */}
