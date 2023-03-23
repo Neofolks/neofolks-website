@@ -102,7 +102,6 @@ function RsvpForm({ toggleShowModal }) {
               <TextInput
                 name="phone"
                 placeholder="Phone"
-                maxLength={10}
                 value={input.phone}
                 onChange={(event) => handleFormChange(index, event)}
                 required
