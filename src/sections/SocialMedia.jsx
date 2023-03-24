@@ -17,22 +17,22 @@ function SocialMedia() {
       {/* Instagram posts */}
       <div className="w-full flex justify-center gap-6 flex-wrap items-center">
         <div>
-            <InstagramEmbed
+          <InstagramEmbed
             url="https://www.instagram.com/p/Cp-0vIGNZd2/"
             className="w-[328px] h-[380px] lg:w-[428px] lg:h-[480px]"
-            />
+          />
         </div>
         <div>
-            <InstagramEmbed
+          <InstagramEmbed
             url="https://www.instagram.com/p/Cp2zK74t9yH/"
             className="w-[328px] h-[380px] lg:w-[428px] lg:h-[480px]"
-            />
+          />
         </div>
         <div>
-            <InstagramEmbed
+          <InstagramEmbed
             url="https://www.instagram.com/p/Cpsr9zntTCT/"
             className="w-[328px] h-[380px] lg:w-[428px] lg:h-[480px]"
-            />
+          />
         </div>
       </div>
     </div>
