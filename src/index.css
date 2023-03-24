@@ -19,6 +19,10 @@
   font-family: "MonumentExtended";
   src: local("MonumentExtended-Regular"), url("./fonts/MonumentExtended-Regular.otf") format("opentype")
 }
+
+img{
+  pointer-events: none;
+}
  /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

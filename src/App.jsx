@@ -7,6 +7,7 @@ import Schedule from "./sections/Schedule";
 import { BrowserRouter } from "react-router-dom";
 import About from "./sections/About";
 import TinkerBottom from "./sections/TinkerBottom";
+import SocialMedia from "./sections/SocialMedia";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Events />
         <Schedule />
         <About/>
+        <SocialMedia/>
         <TinkerBottom/>
       </div>
     </BrowserRouter>
