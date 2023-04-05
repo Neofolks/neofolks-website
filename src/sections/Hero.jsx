@@ -9,8 +9,12 @@ import RegisterModal from "../components/RegisterModal";
 import Bulb from '../assets/Bulb.webp'
 import EyeIcon from '../assets/icons/EyeIcon.svg'
 import { HashLink } from "react-router-hash-link";
+import RegisterNowButton from "../components/RegisterNowButton";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate()
+  
   return (
     <div className="relative w-full min-h-[80svh] lg:min-h-[95svh] bg-bg-dark-blue flex flex-col justify-start items-center section" id="home">
       {/* BG PAPER goes here */}
@@ -41,7 +45,9 @@ function Hero() {
 
         {/* Buttons */}
         <div className="w-full flex flex-wrap gap-1 justify-center items-center space-x-4">
-            <RegisterModal buttonText={"Tinkerthon RSVP"}/>
+            <div onClick={() => navigate('/projects')}>
+              <RegisterNowButton text={"View Projects"}/>
+            </div>
             <HashLink to={"#events"} smooth>
               <button className="bg-[#232323] py-2 px-4 rounded-3xl text-white hover:invert font-semibold cursor-pointer flex justify-center items-center gap-1 text-sm md:text-base">
                 <img src={EyeIcon} alt="" />
