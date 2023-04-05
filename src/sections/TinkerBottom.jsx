@@ -8,7 +8,6 @@ function TinkerBottom() {
   return (
     <div
       className="relative h-fit min-h-[500px] w-full text-white flex flex-col items-center gap-10 px-2 md:mt-10"
-      id="about"
     >
       {/* Tinkerthon bigboi image */}
       <img src={TinkerthonBigboi} className="w-[95%] max-w-[800px]" alt="" />

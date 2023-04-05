@@ -4,8 +4,7 @@ import { InstagramEmbed } from "react-social-media-embed";
 function SocialMedia() {
   return (
     <div
-      className="hidden xl:flex relative h-fit lg:min-h-[750px] w-full text-white flex-col items-center gap-10 px-2 section"
-      id="about"
+      className="hidden xl:flex relative h-fit min-h-[650px] w-full text-white flex-col items-center gap-10 px-2 section"
     >
       {/* Title */}
       <div className="w-full flex flex-col justify-center items-center gap-2">
