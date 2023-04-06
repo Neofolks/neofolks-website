@@ -68,12 +68,8 @@ const videoLinks = [
         videoUrl: "https://www.youtube.com/embed/o1Sd5V0aKfE"
     },
     {
-        teamName: "Cultural Rail",
-        videoUrl: "https://www.youtube.com/embed/47o9IkOPGjQ"
-    },
-    {
         teamName: "Innovation Nation",
-        videoUrl: "https://www.youtube.com/embed/zcTwlR1neVY"
+        videoUrl: "https://www.youtube.com/embed/47o9IkOPGjQ"
     },
     {
         teamName: "HRISHIKESH'S Team",
@@ -86,6 +82,14 @@ const videoLinks = [
     {
         teamName: "The Coders",
         videoUrl: "https://www.youtube.com/embed/_J4TzIKjgg0"
+    },
+    {
+        teamName: "The Boys",
+        videoUrl: "https://www.youtube.com/embed/WQPrFc6CXN0"
+    },
+    {
+        teamName: "Team Electron",
+        videoUrl: "https://www.youtube.com/embed/Ep5bK4C3dTk"
     },
 ]
 
