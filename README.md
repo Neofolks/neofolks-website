@@ -1,6 +1,6 @@
 # Neofolks
 
-- Frontend for [Neofolks](neofolks.live)
+- Frontend for [Neofolks](https://neofolks.live)
 
 ## About Neofolks
 
